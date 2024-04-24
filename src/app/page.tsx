@@ -6,7 +6,7 @@ import Testimonials from "@/components/general/Testimonials";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-[1450px] mx-auto">
       {/* <UtilityBasr /> */}
       <Navbar />
       <Hero />

@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div
       id="Hero"
-      className="relative w-full px-[5vw] lg:px-[8vw] pt-[10vh] md:pt-[16vh] pb-[10vh] lg:pb-[16vh] bg-[#E1F7F5]"
+      className="relative px-[5vw] lg:px-[8vw] pt-[10vh] md:pt-[16vh] pb-[10vh] lg:pb-[16vh] bg-[#E1F7F5]"
     >
       {/* grid */}
       <div className="absolute inset-0 h-full w-full bg-white bg-[linear-gradient(to_right,#0077b512_1px,transparent_1px),linear-gradient(to_bottom,#0077b512_1px,transparent_1px)] bg-[size:42px_42px] -z-10"></div>

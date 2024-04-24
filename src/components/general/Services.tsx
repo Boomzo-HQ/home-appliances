@@ -3,6 +3,7 @@ import refrigerator from "../../../assets/refrigerator-service.png";
 import washing from "../../../assets/washing-machine.jpg";
 import ac from "../../../assets/ac.jpg";
 import uw from "../../../assets/uw.jpg";
+import dish from "../../../assets/dish-washer.png";
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
@@ -35,14 +36,14 @@ const DATA = [
     Appliance: "Dishwasher",
     Service:
       "From routine servicing to complex fixes, ensure your dishwasher operates smoothly without any hassle.",
-    img: refrigerator,
+    img: dish,
   },
 ];
 
 const Services = () => {
   return (
-    <div id="services" className="container relative mx-auto px-[8vw] py-28">
-      <div className="absolute top-0 left-0 right-0 h-20 md:h-24 bg-gradient-to-b from-[#E1F7F5] to-transparent"></div>
+    <div id="services" className="relative mx-auto w-[100%] px-[8vw] py-28">
+      <div className="absolute top-0 left-0 right-0 h-20 w-full md:h-24 bg-gradient-to-b from-[#E1F7F5] to-transparent"></div>
       <h2 className="text-2xl md:text-4xl font-bold text-[#1E0342] text-center mb-10">
         Our Services
       </h2>
