@@ -10,32 +10,33 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Button } from "../ui/button";
 
 const reviews = [
   {
-    name: "Aarav Khanna",
+    name: "Rama Krishna Gorha",
     review:
-      "As a small business owner, I've always found the world of corporate finance a bit intimidating. That's until I partnered with 'GrowthEdge Consultancy'. Their team simplified complex financial concepts and helped me strategize for sustainable growth. A shoutout to their consultant Priya for her exceptional support!",
+      "Good service, till now not a single repeat complete for any work. Washing machine working good, water puri fired working good, Fridge work done till now no repair again & inventor work cool no power discharge problem. Overhaul work person is good 👍 well service..",
   },
   {
-    name: "Meera Gupta",
+    name: "Praveen Mudhiraj",
     review:
-      "I approached 'GrowthEdge Consultancy' for help with streamlining my business processes, and I'm beyond impressed. Their bespoke solutions have not only increased efficiency but also boosted employee morale. Thanks to Rajesh and the team, we're now achieving milestones faster than ever!",
+      "I appreciate the quality of work ,Excellent service , Reasonable price , great Knowledge about the product , very happy with the service 👌👍",
   },
   {
-    name: "Vikram Bhatia",
+    name: "Shri Krishna P G",
     review:
-      "The tailored market research 'GrowthEdge Consultancy' provided was a game-changer for my startup. It was insightful, thorough, and actionable. Their expertise in understanding market dynamics is unmatched. Kudos to Neha for her dedication!",
+      "Very good person and nice work done. Hard to find good people in service sector with respect towards customer and his team.",
   },
   {
-    name: "Ananya Singh",
+    name: "Sapa Ramesh Yadav",
     review:
-      "Navigating through regulatory compliance can be daunting, but 'GrowthEdge Consultancy' made it a breeze for us. Their team, especially Anil, was knowledgeable and patient, ensuring we were on track with all legal requirements. Their professionalism is commendable.",
+      "Good service for home appliances and “Pricing is fair and transparent - definitely value for money.",
   },
   {
-    name: "Siddharth Nair",
+    name: "Murthy Ganti",
     review:
-      "‘GrowthEdge Consultancy’ offered us a fresh perspective on our branding strategy that was innovative yet practical. Their approach to problem-solving is creative and effective. Working with Manisha was a delight, and her insights have been invaluable to our brand's success.",
+      "I had recently got my AC’s serviced it was an amazing experience where Mr. Sharath was very professional in behavior and had suggested the best way to use and maintain the AC which i got serviced. He has given the alternatives for the problems. He was very patient in giving responses to all the queries which we had. He is very reasonable with respect to pricing for his service when compared with that of the people from organized sectors like urban clap or no broker. I would rate him 5 in all aspects.",
   },
 ];
 
@@ -60,7 +61,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="bg-[#9e3efc] py-28 flex flex-col gap-y-10 items-center justify-center"
+      className="bg-[#1E0342] py-28 flex flex-col gap-y-10 items-center justify-center"
     >
       <h3 className="text-base font-semibold text-white uppercase tracking-widest">
         Testimonials
@@ -72,7 +73,7 @@ const Testimonials = () => {
               <div className="p-1">
                 <Card className="border-none w-full shadow-none">
                   <CardContent className="flex flex-col gap-y-10 items-center justify-center p-6">
-                    <span className="text-sm md:text-xl text-white font-light text-center leading-relaxed">
+                    <span className="text-sm md:text-xl text-[#9AC8CD] font-light text-center leading-relaxed">
                       {review.review}
                     </span>
                     <div>
@@ -89,8 +90,22 @@ const Testimonials = () => {
         <CarouselPrevious className="hidden md:block border-none text-white" />
         <CarouselNext className="hidden md:block border-none text-white" />
       </Carousel>
-      <div className="text-center text-sm text-white">
+      {/* <div className="text-center text-sm text-white">
         Review {current} of {count}
+      </div> */}
+      <div className="flex flex-col gap-y-4 md:gap-y-8 items-center justify-center">
+        <h2 className="text-[#E1F7F5] text-base md:text-2xl text-center w-full px-[4vh]">
+          Join our list of{" "}
+          <span className="font-bold text-[#9AC8CD]">Satisfied Customers</span>.
+        </h2>
+        <a
+          href="https://www.google.com/search?client=ms-android-xiaomi-terr1-rso2&sca_esv=7fd1d106578ed93d&hl=en-IN&cs=1&sxsrf=ACQVn0_arLjNgiomx7-HCvyhMWfrrECQiw:1710701515181&q=Sri+Moksha+Home+Appliances&ludocid=13548604123722029320&lsig=AB86z5X5vSKmxpSZsDpXQ6d3_arv&kgs=bdd6d70278460821&shndl=-1&shem=lcsnce,lsp&source=sh/x/loc/act/m1/4#lrd=0x3bcb9b0056508af5:0xbc064faabcd81908,1,,,,"
+          target="_blank"
+        >
+          <Button className="bg-white text-[#1E0342] font-bold px-8 py-6 hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
+            Check all Google Reviews
+          </Button>
+        </a>
       </div>
     </section>
   );

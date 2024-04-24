@@ -1,10 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import Image from "next/image";
-import Logo from "../../../public/images/EV Logo.png";
+import React from "react";
 import Link from "next/link";
-import { BarChart2, Home, Info, Menu, User } from "lucide-react";
 import { Button } from "../ui/button";
 
 const Navbar = () => {
@@ -14,11 +11,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white w-full px-4 md:px-8 max-w-[1440px] pt-4">
+    <nav className="bg-[#E1F7F5] text-[#1E0342] w-full py-6 px-4 md:px-8 max-w-[1440px]">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <div className="flex items-center py-4 px-2">
-            <Link href="/" className="text-2xl font-medium">
+            <Link href="/" className="text-base md:text-2xl font-semibold">
               Sri Moksha Home Appliances
             </Link>
           </div>
@@ -39,7 +36,11 @@ const Navbar = () => {
           ))}
         </div>
         <div>
-          <Button>Call Now</Button>
+          <a href="tel:093916 07870">
+            <Button className="bg-[#0E46A3] text-white px-8 py-6 border border-[#0E46A3] hover:bg-white hover:text-[#0E46A3] hover:font-semibold hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
+              Call Now
+            </Button>
+          </a>
         </div>
       </div>
     </nav>
