@@ -3,7 +3,8 @@ import refrigerator from "../../../assets/refrigerator-service.png";
 import washing from "../../../assets/washing-machine.jpg";
 import ac from "../../../assets/ac.jpg";
 import uw from "../../../assets/uw.jpg";
-import dish from "../../../assets/dish-washer.png";
+import waterPurifier from "../../../assets/water-purifier.png";
+import waterGeyser from "../../../assets/water-geyser.jpg";
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 
@@ -33,10 +34,16 @@ const DATA = [
     img: uw,
   },
   {
-    Appliance: "Dishwasher",
+    Appliance: "Water Purifier",
     Service:
-      "From routine servicing to complex fixes, ensure your dishwasher operates smoothly without any hassle.",
-    img: dish,
+      "Comprehensive cleaning, filter replacement, and sanitization to ensure safe and clean drinking water.",
+    img: waterPurifier,
+  },
+  {
+    Appliance: "Water Geyser",
+    Service:
+      "Expert geyser maintenance and repair services to ensure reliable hot water supply in your home.",
+    img: waterGeyser,
   },
 ];
 
